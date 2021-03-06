@@ -1,0 +1,13 @@
+{
+    "name": "doclab/doclab",
+    "description": "doclab",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Doclab\\Doclab\\": "src/"
+        }
+    }
+}
