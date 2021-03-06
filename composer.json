@@ -9,5 +9,14 @@
         "psr-4": {
             "Doclab\\Doclab\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Doclab\\Doclab\\Providers\\DocLabServiceProvider",
+                "Doclab\\Doclab\\Providers\\RouteServiceProvider",
+                "Doclab\\Doclab\\Providers\\ConsoleServiceProvider"
+            ]
+        }
     }
 }
