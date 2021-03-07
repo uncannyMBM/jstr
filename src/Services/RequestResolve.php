@@ -3,9 +3,6 @@
 
 namespace Doclab\Doclab\Services;
 
-
-use Facades\Doclab\Doclab\Services\BasicServices;
-use Facades\Doclab\Doclab\Services\Reader;
 class RequestResolve
 {
     public function getHash()

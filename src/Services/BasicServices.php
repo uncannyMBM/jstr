@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Doclab\Doclab\Services;
 
 use Facades\Doclab\Doclab\Services\RequestResolve;

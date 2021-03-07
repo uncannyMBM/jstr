@@ -3,9 +3,6 @@
 
 namespace Doclab\Doclab\Services;
 
-
-use Facades\Doclab\Doclab\Services\BasicServices;
-
 class Reader
 {
     public function writeFile($filename, $contents)

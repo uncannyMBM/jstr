@@ -3,7 +3,6 @@
 namespace Doclab\Doclab\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Artisan;
 
 class GetDocConfig extends Command
 {
@@ -38,7 +37,7 @@ class GetDocConfig extends Command
      */
     public function handle()
     {
-        Artisan::call('vendor:publish --tag=installerAssets --tag=installerConfig');
+        $this->callSilently('vendor:publish --tag=installerAssets --tag=installerConfig');
         $this->info('Configuration successfully installed');
     }
 }
