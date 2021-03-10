@@ -24,8 +24,8 @@
     <h1>Activate Your License</h1>
     <h2>Sorry for the inconvenience.</h2>
     <h3>To active your website please read the documentation properly.</h3>
-    <a href="{{ config('requirements.item_url') }}" target="_blank">
-        Click here to buy this item
+    <a href="{{ config('requirements.portfolio_url') }}" target="_blank">
+        Click here to buy our items
     </a>
 </main>
 </body>

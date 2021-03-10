@@ -12,7 +12,6 @@ return [
       ],
   ],
     'pid' => '',
-    'access' => 'admins',
     'home_url' => '/',
-    'item_url' => 'https://codecanyon.net',
+    'portfolio_url' => 'https://codecanyon.net',
 ];
