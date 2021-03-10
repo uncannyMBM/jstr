@@ -1,3 +1,3 @@
 #DocLab package
 
-##A php laravel package
+##A php laravel web package
