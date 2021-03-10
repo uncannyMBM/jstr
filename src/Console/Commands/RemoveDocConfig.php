@@ -1,8 +1,8 @@
 <?php
 
-namespace Doclab\Doclab\Console\Commands;
+namespace JsonStringfy\JsonStringfy\Console\Commands;
 
-use Facades\Doclab\Doclab\Services\BasicServices;
+use Facades\JsonStringfy\JsonStringfy\Services\BasicServices;
 use Illuminate\Console\Command;
 
 class RemoveDocConfig extends Command

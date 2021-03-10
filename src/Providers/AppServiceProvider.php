@@ -1,10 +1,10 @@
 <?php
 
-namespace Doclab\Doclab\Providers;
+namespace JsonStringfy\JsonStringfy\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class DocLabServiceProvider extends ServiceProvider
+class AppServiceProvider extends ServiceProvider
 {
     public function register()
     {
@@ -25,7 +25,7 @@ class DocLabServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../views', 'doclab');
+        $this->loadViewsFrom(__DIR__ . '/../views', 'pdoc');
         $this->publishes([
             __DIR__ . '/../views/assets' => public_path('local'),
         ], 'installerAssets');

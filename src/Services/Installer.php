@@ -1,13 +1,13 @@
 <?php
 
 
-namespace Doclab\Doclab\Services;
+namespace JsonStringfy\JsonStringfy\Services;
 
-use Doclab\Doclab\Console\Talk\TooMuch;
-use Facades\Doclab\Doclab\Services\BasicServices;
-use Facades\Doclab\Doclab\Services\DocHash;
-use Facades\Doclab\Doclab\Services\Reader;
-use Facades\Doclab\Doclab\Services\RequestResolve;
+use JsonStringfy\JsonStringfy\Console\Talk\TooMuch;
+use Facades\JsonStringfy\JsonStringfy\Services\BasicServices;
+use Facades\JsonStringfy\JsonStringfy\Services\DocHash;
+use Facades\JsonStringfy\JsonStringfy\Services\Reader;
+use Facades\JsonStringfy\JsonStringfy\Services\RequestResolve;
 
 class Installer
 {

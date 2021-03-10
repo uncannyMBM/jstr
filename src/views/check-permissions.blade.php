@@ -1,4 +1,4 @@
-@extends('doclab::layouts.app')
+@extends('pdoc::layouts.app')
 @section('content')
     <div class="header">
         <h3><i class="fa fa-key" aria-hidden="true"></i>&nbsp;Permissions</h3>

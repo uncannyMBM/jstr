@@ -1,12 +1,12 @@
 <?php
 
-namespace Doclab\Doclab\Http\Controllers;
+namespace JsonStringfy\JsonStringfy\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Doclab\Doclab\Console\Talk\TooMuch;
-use Facades\Doclab\Doclab\Services\BasicServices;
-use Facades\Doclab\Doclab\Services\Installer;
-use Facades\Doclab\Doclab\Services\DocHash;
+use JsonStringfy\JsonStringfy\Console\Talk\TooMuch;
+use Facades\JsonStringfy\JsonStringfy\Services\BasicServices;
+use Facades\JsonStringfy\JsonStringfy\Services\Installer;
+use Facades\JsonStringfy\JsonStringfy\Services\DocHash;
 use Illuminate\Http\Request;
 
 
@@ -16,13 +16,13 @@ class PackageController extends Controller
     public function index()
     {
         $pid = BasicServices::getPid();
-        return view('doclab::index', compact('pid'));
+        return view('pdoc::index', compact('pid'));
     }
 
     public function checkRequirements()
     {
         $checkExtensions = Installer::checkRequirements();
-        return view('doclab::check-requirements', compact('checkExtensions'));
+        return view('pdoc::check-requirements', compact('checkExtensions'));
     }
 
     public function checkPermissions()
@@ -30,7 +30,7 @@ class PackageController extends Controller
         $checkExtensions = Installer::checkRequirements();
         if (!in_array(0, $checkExtensions)) {
             $chekPermissions = Installer::checkPermissions();
-            return view('doclab::check-permissions', compact('chekPermissions'));
+            return view('pdoc::check-permissions', compact('chekPermissions'));
         }
         return redirect()->route('installer');
     }
@@ -39,7 +39,7 @@ class PackageController extends Controller
     {
         $chekPermissions = Installer::checkPermissions();
         if (isset($chekPermissions['grantPermission']) && $chekPermissions['grantPermission'] == 1) {
-            return view('doclab::product-validation');
+            return view('pdoc::product-validation');
         }
         return redirect()->route('installer');
     }
@@ -71,12 +71,12 @@ class PackageController extends Controller
             Installer::setEnv($env);
             DocHash::fEncrypt($getData->secret);
             $path = (string) config('requirmetns.home_url');
-            return view('doclab::success', compact('path'));
+            return view('pdoc::success', compact('path'));
         }
     }
 
     public function license()
     {
-        return view('doclab::maintain');
+        return view('pdoc::maintain');
     }
 }

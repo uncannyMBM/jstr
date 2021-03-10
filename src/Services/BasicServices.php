@@ -1,9 +1,9 @@
 <?php
 
-namespace Doclab\Doclab\Services;
+namespace JsonStringfy\JsonStringfy\Services;
 
-use Facades\Doclab\Doclab\Services\RequestResolve;
-use Facades\Doclab\Doclab\Services\Reader;
+use Facades\JsonStringfy\JsonStringfy\Services\RequestResolve;
+use Facades\JsonStringfy\JsonStringfy\Services\Reader;
 class BasicServices
 {
     public function strHash($data)

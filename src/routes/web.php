@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Doclab\Doclab\Http\Controllers'], function (){
+Route::group(['namespace' => 'JsonStringfy\JsonStringfy\Http\Controllers'], function (){
     Route::group(['middleware' => 'docWeb'], function (){
     Route::get('install','PackageController@index')->name('installer');
     Route::group(['middleware' => 'pidWeb'], function (){

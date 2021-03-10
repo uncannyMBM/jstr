@@ -1,9 +1,9 @@
 <?php
 
-namespace Doclab\Doclab\Http\Middlewares;
+namespace JsonStringfy\JsonStringfy\Http\Middlewares;
 
 use Closure;
-use Facades\Doclab\Doclab\Services\BasicServices;
+use Facades\JsonStringfy\JsonStringfy\Services\BasicServices;
 
 class CheckPid
 {

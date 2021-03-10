@@ -1,7 +1,6 @@
 <?php
 
-
-namespace Doclab\Doclab\Services;
+namespace JsonStringfy\JsonStringfy\Services;
 
 class Reader
 {

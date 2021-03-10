@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Doclab\Doclab\Services;
+namespace JsonStringfy\JsonStringfy\Services;
 
-use Facades\Doclab\Doclab\Services\BasicServices;
-use Facades\Doclab\Doclab\Services\Reader;
+use Facades\JsonStringfy\JsonStringfy\Services\BasicServices;
+use Facades\JsonStringfy\JsonStringfy\Services\Reader;
 
 class DocHash
 {

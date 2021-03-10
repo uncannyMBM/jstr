@@ -1,4 +1,4 @@
-@extends('doclab::layouts.app')
+@extends('pdoc::layouts.app')
 @section('content')
     <div class="header">
         <h3><i class="fa fa-list" aria-hidden="true"></i>&nbsp;Server Requirements</h3>

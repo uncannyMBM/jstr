@@ -1,11 +1,9 @@
 <?php
 
-namespace Doclab\Doclab\Http\Middlewares;
+namespace JsonStringfy\JsonStringfy\Http\Middlewares;
 
 use Closure;
-use Facades\Doclab\Doclab\Services\BasicServices;
-use Facades\Doclab\Doclab\Services\Installer;
-use Illuminate\Support\Facades\Request;
+use Facades\JsonStringfy\JsonStringfy\Services\Installer;
 
 class WhatToCheck
 {

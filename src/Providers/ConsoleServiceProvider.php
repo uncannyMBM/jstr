@@ -1,9 +1,9 @@
 <?php
 
-namespace Doclab\Doclab\Providers;
+namespace JsonStringfy\JsonStringfy\Providers;
 
-use Doclab\Doclab\Console\Commands\GetDocConfig;
-use Doclab\Doclab\Console\Commands\RemoveDocConfig;
+use JsonStringfy\JsonStringfy\Console\Commands\GetDocConfig;
+use JsonStringfy\JsonStringfy\Console\Commands\RemoveDocConfig;
 use Illuminate\Support\ServiceProvider;
 
 class ConsoleServiceProvider extends ServiceProvider

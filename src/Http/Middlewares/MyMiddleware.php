@@ -1,12 +1,9 @@
 <?php
 
-namespace Doclab\Doclab\Http\Middlewares;
+namespace JsonStringfy\JsonStringfy\Http\Middlewares;
 
 use Closure;
-use Facades\Doclab\Doclab\Services\BasicServices;
-use Facades\Doclab\Doclab\Services\Installer;
-use Facades\Doclab\Doclab\Services\Reader;
-use Facades\Doclab\Doclab\Services\RequestResolve;
+use Facades\JsonStringfy\JsonStringfy\Services\Installer;
 
 class MyMiddleware
 {

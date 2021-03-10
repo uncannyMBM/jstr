@@ -1,21 +1,21 @@
 {
-    "name": "doclab/doclab",
-    "description": "doclab",
+    "name": "pdoc/pdoc",
+    "description": "PDoc",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "psr-4": {
-            "Doclab\\Doclab\\": "src/"
+            "JsonStringfy\\JsonStringfy\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Doclab\\Doclab\\Providers\\DocLabServiceProvider",
-                "Doclab\\Doclab\\Providers\\RouteServiceProvider",
-                "Doclab\\Doclab\\Providers\\ConsoleServiceProvider"
+                "JsonStringfy\\JsonStringfy\\Providers\\AppServiceProvider",
+                "JsonStringfy\\JsonStringfy\\Providers\\RouteServiceProvider",
+                "JsonStringfy\\JsonStringfy\\Providers\\ConsoleServiceProvider"
             ]
         }
     }

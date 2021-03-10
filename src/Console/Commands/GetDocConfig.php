@@ -1,6 +1,6 @@
 <?php
 
-namespace Doclab\Doclab\Console\Commands;
+namespace JsonStringfy\JsonStringfy\Console\Commands;
 
 use Illuminate\Console\Command;
 

@@ -1,7 +1,6 @@
 <?php
 
-namespace Doclab\Doclab\Console\Talk;
-
+namespace JsonStringfy\JsonStringfy\Console\Talk;
 
 trait TooMuch
 {
