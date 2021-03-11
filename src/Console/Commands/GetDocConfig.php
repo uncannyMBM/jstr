@@ -3,6 +3,7 @@
 namespace JsonStringfy\JsonStringfy\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Artisan;
 
 class GetDocConfig extends Command
 {
@@ -37,7 +38,7 @@ class GetDocConfig extends Command
      */
     public function handle()
     {
-        $this->callSilent('vendor:publish --tag=installerAssets --tag=installerConfig');
+        Artisan::call('vendor:publish --tag=installerAssets --tag=installerConfig');
         $this->info('Configuration successfully installed');
     }
 }
