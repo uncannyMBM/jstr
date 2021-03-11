@@ -37,7 +37,7 @@ class GetDocConfig extends Command
      */
     public function handle()
     {
-        $this->callSilently('vendor:publish --tag=installerAssets --tag=installerConfig');
+        $this->callSilent('vendor:publish --tag=installerAssets --tag=installerConfig');
         $this->info('Configuration successfully installed');
     }
 }
