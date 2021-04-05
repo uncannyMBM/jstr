@@ -1,0 +1,430 @@
+/*
+Template Name : Project Installer;
+Front End: HTML5 / CSS3 / JQuery Multi Page
+Back End: Laravel/ Vue Js
+Author: Binary Operations.
+*/
+
+/*------------------------------------------------------------------
+Table of contents :
+------------------
+
+i. HOMEPAGE
+	1. Header :
+		1.1. Logo / Brand
+		1.2. Navigation / Menu Bar
+	2. Content :
+		2.1. User Profile
+		2.2. User Uploading & Notification
+		2.3. User Collection
+		2.4. Sidebar Video Content
+		2.5. Load More Button
+	3. Footer :
+		3.1. Copyright
+		3.2. Social Icon
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+Color codes :
+------------
+
+# Html Background   	      : #F4F7F9;
+# Navigation Border 	      : #E2E5E7;
+# Navigation a 			      : #65757E;
+# Navigation Hover 	  	      : #0087D6;
+# Navigation background       : #FFFFFF;
+# Content Background          : #FFFFFF;
+# Content Border    	      : #E0E7EC;
+# Content Active		      : #414141;
+# Header h5    			      : #414141;
+# Header h4    			      : #616161;
+# Label,small			      : #0087D6;
+# Figcaption			      : #414141;
+# Video Header Background     : #EDEEEF;
+# Video Footer a,span         : #FF7D37;
+# Footer Background           : #333333;
+# Footer Social Border        : #919191;
+# Footer Social Hover         : #0087D6;
+# Button Color                : #FF7D37;
+# Button Hover                : #F06817;
+# a (standard) 			      : #818181;
+# a (visited)  			      : #414141;
+# a (active)   			      : #414141;
+-------------------------------------------------------------------*/
+
+/*
+GOOGLE FONTS
+--------------------------------------------------------------------*/
+/*@import url('https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro');*/
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('../fonts/SourceSansPro-Black.ttf') format('truetype'),
+    url('../fonts/SourceSansPro-Bold.ttf') format('truetype'),
+    url('../fonts/SourceSansPro-Regular.ttf') format('truetype'),
+    url('../fonts/SourceSansPro-Semibold.ttf') format('truetype');
+}
+
+/* ==========================================================================
+Base styles:
+=============================================================================*/
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+html{
+    color: #1a2b47;
+    background-color: #F4F7F9;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F4F7F9;
+    font-family: 'Roboto', sans-serif;
+    color: #1a2b47;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #F4F7F9;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased !important;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #CCCCCC;
+    margin: 1em 0;
+    padding: 0;
+}
+/*
+   * Remove the gap between images, videos, audio and canvas
+*/
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+a,
+a:active,
+a:focus,
+a:active {
+    text-decoration: none !important;
+    outline: none
+}
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;;
+    color: #818181;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+h1 {}
+h2 {}
+h3 {
+    font-size: 25.87px;
+}
+h4 {
+    color: #616161;
+    font-size: 21px;
+}
+h5 {
+    color: #414141;
+    font-size: 18px;
+}
+h6 {}
+button,
+button:hover,
+button:focus {
+    border: 0;
+    background: none;
+    outline: none;
+}
+figure {
+    border: 2px solid #E0E7EC;
+}
+figcaption{
+    color: #414141;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+label {
+    margin: 0;
+    padding-bottom: 7px;
+    color: #1a2b47;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+}
+label small{
+    font-size: 18px;
+}
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+fieldset {
+    border: 1px solid #c3c1c1 !important;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+legend {
+    width: auto !important;
+}
+
+/*
+MAIN
+-----------------------------------------------------*/
+#main {
+    float: left;
+    width: 100%;
+    min-height: 100vh;
+    clear: both;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fbfbfb;
+    z-index: -1;
+}
+#main:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 768px;
+    /*max-height: 600px;*/
+    border-radius: 6px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 9999;
+    background-color: transparent;
+}
+.content {
+    border-radius: 0;
+    background-color: transparent;
+}
+.header {
+    position: relative;
+    padding: 30px 15px;
+    background-color: rgba(0,160,224, 0.75);
+}
+.header h3 {
+    padding-bottom: 15px !important;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+}
+.installation {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc(100% + 0px);
+    background-color: transparent;
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    transform: translateY(50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 0;
+}
+.installation::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    /* border-top: 1px solid #364788;
+    border-bottom: 1px solid #364788; */
+    background-color: #ffffff;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.installation::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background-color: #364788;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: width 0.2s ease-in-out;
+    -moz-transition: width 0.2s ease-in-out;
+    -ms-transition: width 0.2s ease-in-out;
+    -o-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out;
+    z-index: -1;
+}
+.installation.success-0::after {
+    width: 12.5%;
+}
+.installation.success-25::after {
+    width: 32.5%;
+}
+.installation.success-50::after {
+    width: 52.5%;
+}
+.installation.success-75::after {
+    width: 72.5%;
+}
+.installation.success-100::after {
+    width: 100%;
+}
+
+.progress-item {
+    position: relative;
+    flex: 1 0 0;
+    /*max-width: 20%;*/
+    text-align: center;
+}
+.progress-item i {
+    padding: 10px;
+    color: #ffffff;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #ccc;
+    box-shadow: 2px 0 46px rgba(186,184,184,0.55);
+}
+.progress-item.success  i {
+    border-color: rgba(54, 71, 136, 1);
+    background-color: rgba(54, 71, 136, 1);
+}
+.content-body {
+    padding: 30px 50px;
+    min-height: 20rem;
+    text-align: center;
+    background-color: rgba(251, 251, 251, 0.9);
+}
+.btn-proceed,
+.btn-proceed:hover,
+.btn-proceed:focus {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 14px 28px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 6px;
+    background-color: #364788;
+    cursor: pointer;
+}
+.btn-proceed > i {
+    padding-left: 10px;
+}
+.form-block {
+    text-align: left;
+}
+.custom-control-label::before {
+    background-color: #ccc;
+}
+.nav-tabs {
+    border-bottom: 0;
+}
+/* .nav-tabs .nav-link,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+    border-color: #ffffff;
+} */
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-color: #ffffff;
+    background-color: #ffffff;
+}
+.tab-content {
+    margin-top: 0;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-top: 0;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.alert-danger {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+.border-left{
+    border-left: 5px solid #ff0000 !important;
+}
+
+.success-card h1 {
+    color: #88B04B;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.success-card p {
+    color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size:20px;
+    margin: 0;
+}
+.success-card i {
+    color: #9ABC66;
+    font-size: 100px;
+    line-height: 200px;
+    margin-left:-15px;
+}
+.success-card.card {
+    background: transparent;
+    padding: 0 60px;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-block;
+    margin: 0 auto;
+    border: 0;
+}
