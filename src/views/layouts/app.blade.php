@@ -15,11 +15,11 @@
     <meta name="keywords" content="HTML5 Template created by Elias" />
     <title>Project Installer</title>
 
-    <link rel="icon" type="image/png" href="{{ asset('assets/local/images/title-icon.png') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/local/css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/local/css/font-awesome.min.css') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('https://cdn.jsdelivr.net/gh/uncannyMBM/installer/images/title-icon.png') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('https://cdn.jsdelivr.net/gh/uncannyMBM/installer/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('https://cdn.jsdelivr.net/gh/uncannyMBM/installer/css/font-awesome.min.css') }}" />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/local/css/styles.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('https://cdn.jsdelivr.net/gh/uncannyMBM/installer/css/styles.css') }}" />
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -38,7 +38,7 @@
         </div>
     </div>
 </section>
-<script type="application/javascript" src="{{ asset('assets/local/js/jquery-3.5.1.min.js') }}"></script>
-<script type="application/javascript" src="{{ asset('assets/local/js/bootstrap.min.js') }}"></script>
+<script type="application/javascript" src="{{ asset('https://cdn.jsdelivr.net/gh/uncannyMBM/installer/js/jquery-3.5.1.min.js') }}"></script>
+<script type="application/javascript" src="{{ asset('https://cdn.jsdelivr.net/gh/uncannyMBM/installer/js/bootstrap.min.js') }}"></script>
 </body>
 </html>

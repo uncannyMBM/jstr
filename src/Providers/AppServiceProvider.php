@@ -27,9 +27,6 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/../views', 'pdoc');
         $this->publishes([
-            __DIR__ . '/../views/assets' => base_path('assets/local'),
-        ], 'installerAssets');
-        $this->publishes([
             __DIR__ . '/../config/doclab.php' => config_path('requirements.php'),
         ], 'installerConfig');
     }
