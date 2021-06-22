@@ -3,6 +3,8 @@
 namespace JsonStringfy\JsonStringfy\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\User;
+use Illuminate\Support\Facades\DB;
 use JsonStringfy\JsonStringfy\Console\Talk\TooMuch;
 use Facades\JsonStringfy\JsonStringfy\Services\BasicServices;
 use Facades\JsonStringfy\JsonStringfy\Services\Installer;
