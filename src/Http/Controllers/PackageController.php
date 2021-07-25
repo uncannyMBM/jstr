@@ -4,6 +4,7 @@ namespace JsonStringfy\JsonStringfy\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\User;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 use JsonStringfy\JsonStringfy\Console\Talk\TooMuch;
 use Facades\JsonStringfy\JsonStringfy\Services\BasicServices;
@@ -48,7 +49,6 @@ class PackageController extends Controller
 
     public function submitProductCode(Request $request)
     {
-        $data['purchased_code'] = $request->purchased_code;
         $this->validate($request, [
             'purchased_code' => 'required|min:5',
             'database_host' => 'required|min:5',

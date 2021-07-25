@@ -38,7 +38,7 @@ class GetDocConfig extends Command
      */
     public function handle()
     {
-        Artisan::call('vendor:publish --tag=installerAssets --tag=installerConfig');
+        Artisan::call('vendor:publish --tag=installerConfig');
         $this->info('Configuration successfully installed');
     }
 }
