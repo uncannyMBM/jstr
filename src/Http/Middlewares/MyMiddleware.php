@@ -4,6 +4,7 @@ namespace JsonStringfy\JsonStringfy\Http\Middlewares;
 
 use Closure;
 use Facades\JsonStringfy\JsonStringfy\Services\Installer;
+
 use Illuminate\Support\Facades\Artisan;
 
 class MyMiddleware

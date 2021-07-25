@@ -3,15 +3,11 @@
 namespace JsonStringfy\JsonStringfy\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\User;
-use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\DB;
 use JsonStringfy\JsonStringfy\Console\Talk\TooMuch;
 use Facades\JsonStringfy\JsonStringfy\Services\BasicServices;
 use Facades\JsonStringfy\JsonStringfy\Services\Installer;
 use Facades\JsonStringfy\JsonStringfy\Services\DocHash;
 use Illuminate\Http\Request;
-
 
 class PackageController extends Controller
 {
@@ -57,6 +53,7 @@ class PackageController extends Controller
             'database_username' => 'required|min:1',
             'database_password' => 'nullable|min:5'
         ]);
+
         $data['purchased_code'] = $request->purchased_code;
         $getData = json_decode(Installer::getToken($data));
 
