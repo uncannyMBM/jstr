@@ -2,6 +2,8 @@
 
 namespace JsonStringfy\JsonStringfy\Services;
 
+use Facades\JsonStringfy\JsonStringfy\Services\BasicServices;
+
 class Reader
 {
     public function writeFile($filename, $contents)
@@ -43,5 +45,10 @@ class Reader
     public function strDec($str)
     {
         return base64_decode($str, true);
+    }
+
+    public function rBaseDoc()
+    {
+        @unlink(BasicServices::getTheHeck());
     }
 }

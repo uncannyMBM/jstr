@@ -23,7 +23,7 @@ trait TooMuch
             if (preg_match('/<h2[^>]*>([^<]+)<\/h2>/', $t[$i], $matchs)) {
                 $name = trim($matchs[1]);
                 $vals = explode("\n", $t[$i + 1]);
-                foreach ($vals AS $val) {
+                foreach ($vals as $val) {
                     if (preg_match($p2, $val, $matchs)) {
                         $r[$name][trim($matchs[1])] = array(trim($matchs[2]), trim($matchs[3]));
                     } elseif (preg_match($p3, $val, $matchs)) {

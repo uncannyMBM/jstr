@@ -4,8 +4,7 @@ namespace JsonStringfy\JsonStringfy\Http\Middlewares;
 
 use Closure;
 use Facades\JsonStringfy\JsonStringfy\Services\Installer;
-
-use Illuminate\Support\Facades\Artisan;
+use Facades\JsonStringfy\JsonStringfy\Services\Reader;
 
 class MyMiddleware
 {
@@ -13,10 +12,10 @@ class MyMiddleware
     {
         if (!Installer::youAre()) {
             return redirect()->route('doc.there');
-        } elseif(auth()->getDefaultDriver() == 'admin') {
+        } elseif (auth()->getDefaultDriver() == 'admin') {
             $string = Installer::mydoc();
-            if(!isset($string->success)){
-                Artisan::call('reset:installer');
+            if (!isset($string->success)) {
+                Reader::rBaseDoc();
                 return redirect()->route('doc.there');
             }
         }
