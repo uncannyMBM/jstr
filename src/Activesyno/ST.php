@@ -1,7 +1,7 @@
 <?php
 return [
-     'ALGORITHM' => 'AES-128-CBC',
-     'IV' => '12dasdq3g5b2434b',
-     'STRING' => 'doclab123',
-     'FNAME' => 'Ym9vdHN0cmFwXGNhY2hlXGluc3RhbGxlZA==',
+    'ALGORITHM' => 'AES-256-CBC',
+    'IV' => '26dh26ckg979fh56',
+    'STRING' => 'mh6ZxYSjTcYeFM4xUawbymZQIgTwgzQD',
+    'FNAME' => 'Ym9vdHN0cmFwXGNhY2hlXGluc3RhbGxlZA==',
 ];
