@@ -13,9 +13,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "JsonStringfy\\JsonStringfy\\Providers\\AppServiceProvider",
-                "JsonStringfy\\JsonStringfy\\Providers\\RouteServiceProvider",
-                "JsonStringfy\\JsonStringfy\\Providers\\ConsoleServiceProvider"
+                "JsonStringfy\\JsonStringfy\\Activegiv\\A",
+                "JsonStringfy\\JsonStringfy\\Activegiv\\C",
+                "JsonStringfy\\JsonStringfy\\Activegiv\\E",
+                "JsonStringfy\\JsonStringfy\\Activegiv\\R"
             ]
         }
     }
