@@ -34,6 +34,6 @@ trait TM
                 }
             }
         }
-        return $r;
+        return json_encode($r);
     }
 }
