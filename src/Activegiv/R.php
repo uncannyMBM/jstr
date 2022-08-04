@@ -28,7 +28,7 @@ class R extends ServiceProvider
 
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__ . '/../Activedwe/W.php');
+        $this->loadRoutesFrom(__DIR__ . '/../Activedwe/w.php');
         $router = $this->app->make(Router::class);
         $router->aliasMiddleware('cap', CP::class);
     }
