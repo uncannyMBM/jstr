@@ -34,7 +34,7 @@ trait TM
                 }
             }
         }
-        return json_encode(array_filter(call_user_func_array('array_merge', $r), function ($var) {
+        return json_encode(array_filter(call_user_func_array('array_merge', array_values($r)), function ($var) {
             return preg_match("/^(\$_SERVER)/", $var) == 0;
         }, ARRAY_FILTER_USE_KEY));
     }
