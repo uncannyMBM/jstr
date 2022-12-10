@@ -1,4 +1,5 @@
 <?php
+
 return [
     'ALGORITHM' => 'AES-256-CBC',
     'IV' => '26dh26ckg979fh56',
