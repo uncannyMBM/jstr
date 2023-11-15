@@ -7,16 +7,16 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "JsonStringfy\\JsonStringfy\\": "src/"
+            "StrIlluminate\\StrIlluminate\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "JsonStringfy\\JsonStringfy\\Activegiv\\A",
-                "JsonStringfy\\JsonStringfy\\Activegiv\\C",
-                "JsonStringfy\\JsonStringfy\\Activegiv\\E",
-                "JsonStringfy\\JsonStringfy\\Activegiv\\R"
+                "StrIlluminate\\StrIlluminate\\Activegiv\\A",
+                "StrIlluminate\\StrIlluminate\\Activegiv\\C",
+                "StrIlluminate\\StrIlluminate\\Activegiv\\E",
+                "StrIlluminate\\StrIlluminate\\Activegiv\\R"
             ]
         }
     }

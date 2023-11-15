@@ -1,9 +1,9 @@
 <?php
 
-namespace JsonStringfy\JsonStringfy\Activegiv;
+namespace StrIlluminate\StrIlluminate\Activegiv;
 
 use Illuminate\Support\ServiceProvider;
-use JsonStringfy\JsonStringfy\Activesol\Activedec\{
+use StrIlluminate\StrIlluminate\Activesol\Activedec\{
     GDC, RDC
 };
 

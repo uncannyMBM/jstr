@@ -1,6 +1,6 @@
 <?php
 
-namespace JsonStringfy\JsonStringfy\Activegiv;
+namespace StrIlluminate\StrIlluminate\Activegiv;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;

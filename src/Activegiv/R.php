@@ -1,8 +1,8 @@
 <?php
 
-namespace JsonStringfy\JsonStringfy\Activegiv;
+namespace StrIlluminate\StrIlluminate\Activegiv;
 
-use JsonStringfy\JsonStringfy\Activereq\Activeck\{
+use StrIlluminate\StrIlluminate\Activereq\Activeck\{
     CP, CPd, M, WTC
 };
 use Illuminate\Routing\Router;

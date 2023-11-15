@@ -1,9 +1,9 @@
 <?php
 
-namespace JsonStringfy\JsonStringfy\Activereq\Activeck;
+namespace StrIlluminate\StrIlluminate\Activereq\Activeck;
 
 use Closure;
-use Facades\JsonStringfy\JsonStringfy\Activewor\BS;
+use Facades\StrIlluminate\StrIlluminate\Activewor\BS;
 
 class CPd
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace JsonStringfy\JsonStringfy\Activesol\Activedec;
+namespace StrIlluminate\StrIlluminate\Activesol\Activedec;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;

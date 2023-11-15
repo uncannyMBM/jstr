@@ -1,8 +1,8 @@
 <?php
 
-namespace JsonStringfy\JsonStringfy\Activewor;
+namespace StrIlluminate\StrIlluminate\Activewor;
 
-use Facades\JsonStringfy\JsonStringfy\Activewor\RD;
+use Facades\StrIlluminate\StrIlluminate\Activewor\RD;
 class RR
 {
     public function getHash()

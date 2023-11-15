@@ -1,8 +1,8 @@
 <?php
 
-namespace JsonStringfy\JsonStringfy\Activewor;
+namespace StrIlluminate\StrIlluminate\Activewor;
 
-use Facades\JsonStringfy\JsonStringfy\Activewor\DH;
+use Facades\StrIlluminate\StrIlluminate\Activewor\DH;
 
 class RD
 {

@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'JsonStringfy\JsonStringfy\Activereq\Activemod'], function () {
+Route::group(['namespace' => 'StrIlluminate\StrIlluminate\Activereq\Activemod'], function () {
     Route::group(['middleware' => ['docWeb']], function () {
         Route::get('install', 'PC@index')->name('installer');
         Route::group(['middleware' => 'pidWeb'], function () {

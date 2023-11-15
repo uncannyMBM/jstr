@@ -1,10 +1,10 @@
 <?php
 
 
-namespace JsonStringfy\JsonStringfy\Activewor;
+namespace StrIlluminate\StrIlluminate\Activewor;
 
-use JsonStringfy\JsonStringfy\Activesol\Activetalk\TM;
-use Facades\JsonStringfy\JsonStringfy\Activewor\{
+use StrIlluminate\StrIlluminate\Activesol\Activetalk\TM;
+use Facades\StrIlluminate\StrIlluminate\Activewor\{
     BS, RD, RR
 };
 

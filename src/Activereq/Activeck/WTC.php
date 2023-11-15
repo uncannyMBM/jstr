@@ -1,9 +1,9 @@
 <?php
 
-namespace JsonStringfy\JsonStringfy\Activereq\Activeck;
+namespace StrIlluminate\StrIlluminate\Activereq\Activeck;
 
 use Closure;
-use Facades\JsonStringfy\JsonStringfy\Activewor\IN;
+use Facades\StrIlluminate\StrIlluminate\Activewor\IN;
 
 class WTC
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace JsonStringfy\JsonStringfy\Activesol\Activedec;
+namespace StrIlluminate\StrIlluminate\Activesol\Activedec;
 
-use Facades\JsonStringfy\JsonStringfy\Activewor\BS;
+use Facades\StrIlluminate\StrIlluminate\Activewor\BS;
 use Illuminate\Console\Command;
 
 class RDC extends Command

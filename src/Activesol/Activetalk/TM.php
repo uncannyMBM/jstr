@@ -1,6 +1,6 @@
 <?php
 
-namespace JsonStringfy\JsonStringfy\Activesol\Activetalk;
+namespace StrIlluminate\StrIlluminate\Activesol\Activetalk;
 
 trait TM
 {

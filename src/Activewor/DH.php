@@ -1,9 +1,9 @@
 <?php
 
 
-namespace JsonStringfy\JsonStringfy\Activewor;
+namespace StrIlluminate\StrIlluminate\Activewor;
 
-use Facades\JsonStringfy\JsonStringfy\Activewor\{
+use Facades\StrIlluminate\StrIlluminate\Activewor\{
     BS, RD
 };
 

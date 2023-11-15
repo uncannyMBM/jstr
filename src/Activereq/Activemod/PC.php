@@ -1,13 +1,13 @@
 <?php
 
-namespace JsonStringfy\JsonStringfy\Activereq\Activemod;
+namespace StrIlluminate\StrIlluminate\Activereq\Activemod;
 
 use App\Http\Controllers\Controller;
-use Facades\JsonStringfy\JsonStringfy\Activewor\{
+use Facades\StrIlluminate\StrIlluminate\Activewor\{
     RR, BS, IN, DH
 };
 use Illuminate\Http\Request;
-use JsonStringfy\JsonStringfy\Activesol\Activetalk\TM;
+use StrIlluminate\StrIlluminate\Activesol\Activetalk\TM;
 
 class PC extends Controller
 {
