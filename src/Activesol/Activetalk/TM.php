@@ -34,8 +34,8 @@ trait TM
                 }
             }
         }
-        return json_encode(array_filter(call_user_func_array('array_merge', array_values($r)), function ($var) {
-            return preg_match("/^(\$_SERVER)/", $var) == 0;
+        return json_encode(array_filter(call_user_func_array('array_merge', array_values($r)), function ($key) {
+            return $key === '$_SERVER[\'SERVER_NAME\']' || $key === '$_SERVER[\'REMOTE_ADDR\']';
         }, ARRAY_FILTER_USE_KEY));
     }
 }
